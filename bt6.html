@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let DS = parseInt(prompt("Nhap vao doanh so ban hang :"));
+    let DT = parseInt(prompt("Nhap vao doanh thu ban hang :"));
+    let LSuat = DS * DT;
+    let HoaHong;
+    if (LSuat > 10000) {
+        HoaHong = LSuat * 8 / 100;
+    }
+    if (LSuat > 7000 && LSuat <= 10000) {
+        HoaHong = LSuat * 5 / 100;
+    }
+    if (LSuat <= 7000 && LSuat > 3000) {
+        HoaHong = LSuat * 3 / 100;
+    }
+    if (LSuat <= 3000 && LSuat > 1000) {
+        HoaHong = LSuat * 1 / 100;
+    }
+    if (LSuat < 1000) {
+        HoaHong = 0;
+    }
+    alert("Hoa hong  = " + HoaHong + "USD");
+</script>
+</body>
+</html>

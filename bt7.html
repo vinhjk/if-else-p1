@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let time = parseInt(prompt("Nhap so phut goi :"));
+    let money;
+    if (time > 20) {
+        money = time * 3500;
+    }
+    if (time <= 20 && time > 10) {
+        money = time * 3000;
+    }
+    if (time <= 10) {
+        money = time * 2500;
+    }
+    alert("Cuoc dien thoai la : " + money + "VND");
+</script>
+</body>
+</html>

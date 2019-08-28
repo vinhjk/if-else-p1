@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let pointKT = parseInt(prompt("Enter a number fo point :"));
+    let pointGK = parseInt(prompt("Enter a number fo point"));
+    let pointCK = parseInt(prompt("Enter a number fo point"));
+    let TBM = (pointKT + pointGK + pointCK) / 3;
+    if (TBM >= 8) {
+        alert("HSG");
+    }
+    if (TBM < 8 && TBM >= 6.5) {
+        alert("HSTT");
+    }
+    if (TBM < 6.5 && TBM >= 5) {
+        alert("HSTB");
+    }
+    if (TBM < 5) {
+        alert("HSY");
+    }
+</script>
+</body>
+</html>
